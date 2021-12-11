@@ -1,16 +1,16 @@
-//VARIABLES
+//VARIABLES ----CAMPOS SELECT HTML
 const city = document.querySelector('#city');
 const min = document.querySelector('#min-price');
 const max = document.querySelector('#max-price');
 const beach = document.querySelector('#beach');
 const rating = document.querySelector('#rating');
-// -----------------------------------------------
+// --------------ELEMENTOS----------------------------
 const hoteles = document.querySelectorAll('.hotel');
 const price = document.querySelectorAll('.price');
 const ratingText = document.querySelectorAll('.rate-text');
 const ubicacion = document.querySelectorAll('.hotel-location h3');
 const playa = document.querySelectorAll('.service-img-beach');
-let pp;
+
 
 const datos = {
     name: '',
@@ -48,24 +48,27 @@ rating.addEventListener('change', (e) => {
 });
 
 
+
 //FUNCIONES
 function filtrar() {
     const resultado = hotelesJava.filter(filtrarLocation).filter(filtrarRating).filter(filtrarBeach).filter(filtrarMin).filter(filtrarMax);
     let ids = resultado.map( (item) => item.id);
-    console.log(ids)
     hoteles.forEach(hotel => {
-      let id = hotel.dataset.id;
-      console.log(id)
-  
-      if(ids.includes(id)){
-         alert('si')
+      let id = parseInt(hotel.dataset.id);
+   
+      if(ids.includes(id))  {
+         hotel.classList.add('put');
+      } else {
+         hotel.classList.remove('put');
       }
-  })
-   };
+   })
+   
+
+};
  
 
 
-
+//FILTRA LA UBICACION
  function filtrarLocation(hotel) {
     if(datos.location) {
        return hotel.location === datos.location;
@@ -73,6 +76,7 @@ function filtrar() {
     return hotelesJava;
  }
 
+ //FILTRA EL RATING
  function filtrarRating(hotel) {
     if(datos.rating) {
        return hotel.rating === datos.rating;
@@ -80,6 +84,7 @@ function filtrar() {
     return hotelesJava;
  }
 
+ //FILTRA SI TIENE PLAYA
  function filtrarBeach(hotel) {
     if(datos.beach) {
        return hotel.beach === datos.beach;
@@ -87,6 +92,7 @@ function filtrar() {
     return hotelesJava;
  }
 
+ //FILTRA EL PRECIO MINIMO
  function filtrarMin(hotel) {
     if(datos.min) {
        return hotel.price >= parseInt(datos.min);
@@ -94,6 +100,7 @@ function filtrar() {
     return hotelesJava;
  }
 
+ //FILTRA EL PRECIO MAXIMO
  function filtrarMax(hotel) {
     if(datos.max) {
        return hotel.price <= parseInt(datos.max);
