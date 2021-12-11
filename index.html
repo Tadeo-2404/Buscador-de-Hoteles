@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>MyHotel.com</title>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="logo-container">
+            <h1 class="logo-title">MyTravel</h1>
+        </div>
+        <div class="nav-body">
+            <div class="links-container">
+                <a class="link-nav" href="#">Sign In</a>
+                <a class="link-nav" href="#">Sign Up</a>
+            </div>
+            <div class="coin-container">
+                <select class="select">
+                    <option value="MXN">MXN - Peso Mexicano</option>
+                    <option value="US">US - Dollar EE.UU</option>
+                    <option value="GBP">GBP - Libra Esterlina</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <form class="form">
+        <div class="form-title-container">
+            <h2 class="form-title">Serch the best Hotels in the best Cities</h2>
+        </div>
+
+        <div class="selections">
+            <section class="section city" id="city">
+                <label class="city-container">City</label>
+                <select class="city-select select">
+                    <option value="">Select</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Roma">Roma</option>
+                    <option value="London">London</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="Madrid">Madrid</option>
+                </select>
+            </section>
+
+            <section class="section min-price" id="min-price">
+                <label class="min-price-container">Min Price</label>
+                <select class="min-select select">
+                    <option value="">Select</option>
+                    <option value="200">200US$</option>
+                    <option value="300">300US$</option>
+                    <option value="500">500US$</option>
+                    <option value="800">800US$</option>
+                    <option value="1000">1000US$</option>
+                    <option value="1300">1300US$</option>
+                    <option value="1500">1500US$</option>
+                    <option value="1800">1800US$</option>
+                    <option value="2000">2000US$</option>
+                </select>
+            </section>
+
+
+            <section class="section max-price" id="max-price">
+                <label class="max-price-container">Max Price</label>
+                <select class="max-select select">
+                    <option value="">Select</option>
+                    <option value="200">200US$</option>
+                    <option value="300">300US$</option>
+                    <option value="500">500US$</option>
+                    <option value="800">800US$</option>
+                    <option value="1000">1000US$</option>
+                    <option value="1300">1300US$</option>
+                    <option value="1500">1500US$</option>
+                    <option value="1800">1800US$</option>
+                    <option value="2000">2000US$</option>
+                </select>
+            </section>
+
+            <section class="section beach" id="beach">
+                <label class="beach-container">On the Beach</label>
+                <select class="beach-select select">
+                    <option value="">Select</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </section>
+
+            <section class="section rating" id="rating">
+                <label class="rating-container">Rating</label>
+                <select class="rating-select select">
+                    <option value="">Select</option>
+                    <option value="Excellent">Excellent</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Good">Good</option>
+                    <option value="Not quite Good">Not quite Good</option>
+                    <option value="Bad">Bad</option>
+                    <option value="Very Bad">Very Bad</option>
+                </select>
+            </section>
+        </div>
+    </form>
+
+    <main>
+        <section class="hotels">
+            <div class="result">
+                <h2 class="result-title">Results...</h2>
+            </div>
+            <div class="hotels-container">
+
+                <!-----------------------PARIS------------------------------------>
+                <div class="hotel" data-id="1">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/paris/hotel1.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Hotel Loldodo</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>Paris</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">9.8</p>
+                            <p class="rate-text">Excellent</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">500</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img service-img-beach" src="/img/beach-chair.png">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <div class="hotel" data-id="2">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/paris/hotel2.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Hotel Luare</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>Paris</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">9.6</p>
+                            <p class="rate-text">Excellent</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">800</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img service-img-beach" src="/img/beach-chair.png">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <div class="hotel" data-id="3">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/paris/hotel3.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Hotel Dijor</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>Paris</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">9.2</p>
+                            <p class="rate-text">Very Good</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">970</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <div class="hotel" data-id="4">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/paris/hotel4.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Hotel Cordiant</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>Paris</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">8.4</p>
+                            <p class="rate-text">Good</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">400</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <div class="hotel" data-id="5">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/paris/hotel5.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Hotel Garzin</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>Paris</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">7.4</p>
+                            <p class="rate-text">Not Quite Good</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">1000</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img service-img-beach" src="/img/beach-chair.png">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <!-----------------------ROMA------------------------------------>
+                <div class="hotel" data-id="6">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/roma/hotel1.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Hotel Plazzin</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>Roma</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">9.5</p>
+                            <p class="rate-text">Excellent</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">670</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img service-img-beach" src="/img/beach-chair.png">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <div class="hotel" data-id="7">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/roma/hotel2.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Hotel Marconni</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>Roma</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">9.8</p>
+                            <p class="rate-text">Very Good</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">1200</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img service-img-beach" src="/img/beach-chair.png">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <div class="hotel" data-id="8">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/roma/hotel3.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Clotus Hotel</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>Roma</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">9.4</p>
+                            <p class="rate-text">Very Good</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">1310</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <div class="hotel" data-id="9">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/roma/hotel4.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Caesar's Hotel</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>Roma</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">7.9</p>
+                            <p class="rate-text">Not Quite Good</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">750</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <div class="hotel" data-id="10">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/roma/hotel5.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Omporio Hotel</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>Roma</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">8.1</p>
+                            <p class="rate-text">Not Quite Good</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">1100</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img service-img-beach" src="/img/beach-chair.png">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <!-----------------------MADRID------------------------------------>
+                <div class="hotel" data-id="11">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/madrid/hotel1.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Hotel Marcus</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>Madrid</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">9.8</p>
+                            <p class="rate-text">Excellent</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">500</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img service-img-beach" src="/img/beach-chair.png">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <div class="hotel" data-id="12">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/madrid/hotel2.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Hotel Paluar</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>Madrid</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">9.4</p>
+                            <p class="rate-text">Very Good</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">1340</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img service-img-beach" src="/img/beach-chair.png">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <div class="hotel" data-id="13">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/madrid/hotel3.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Hotel Caluma</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>Madrid</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">9.4</p>
+                            <p class="rate-text">Very Good</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">1230</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <div class="hotel" data-id="14">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/madrid/hotel4.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Hotel El Alto</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>Madrid</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">7.6</p>
+                            <p class="rate-text">Not Quite Good</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">790</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <div class="hotel" data-id="15">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/madrid/hotel5.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Hotel Miramar</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>Madrid</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">9.2</p>
+                            <p class="rate-text">Good</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">600</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img service-img-beach" src="/img/beach-chair.png">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <!-----------------------LONDON------------------------------------>
+                <div class="hotel" data-id="16">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/london/hotel1.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Hotel Kitford</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>London</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">9.7</p>
+                            <p class="rate-text">Excellent</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">1450</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img service-img-beach" src="/img/beach-chair.png">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <div class="hotel" data-id="17">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/london/hotel2.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Hotel Glamourous</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>London</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">9.6</p>
+                            <p class="rate-text">Very Good</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">1140</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <div class="hotel" data-id="18">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/london/hotel3.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Hotel Queens</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>London</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">6.9</p>
+                            <p class="rate-text">Bad</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">1430</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img service-img-beach" src="/img/beach-chair.png">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <div class="hotel" data-id="19">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/london/hotel4.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Hotel Marick</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>London</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">9.5</p>
+                            <p class="rate-text">Very Good</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">990</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img service-img-beach" src="/img/beach-chair.png">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <div class="hotel" data-id="20">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/london/hotel5.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Hotel Stturgart</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>London</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">7.9</p>
+                            <p class="rate-text">Not Quite Good</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">635</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img service-img-beach" src="/img/beach-chair.png">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <!-----------------------L.A------------------------------------>
+                <div class="hotel" data-id="21">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/L.A/hotel1.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Hotel Abraham</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>Los Angeles</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">9.8</p>
+                            <p class="rate-text">Excellent</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">$1450US</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <div class="hotel" data-id="22">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/L.A/hotel2.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Hotel Liberty</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>Los Angeles</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">9.8</p>
+                            <p class="rate-text">Very Good</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">1150</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <div class="hotel" data-id="23">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/L.A/hotel3.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Hotel Royal</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>Los Angeles</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">8.3</p>
+                            <p class="rate-text">Good</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">1230</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img service-img-beach" src="/img/beach-chair.png">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <div class="hotel" data-id="24">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/L.A/hotel4.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Hotel Eagle</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>Los Angeles</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">7.6</p>
+                            <p class="rate-text">Not Quite Good</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">1990</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+                <div class="hotel" data-id="25">
+                    <div class="hotel-img-container">
+                        <img class="hotel-img" src="/img/L.A/hotel5.jpg">
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-title-container">
+                            <h2 class="hotel-title">Hotel Jolistack</h2>
+                        </div>
+                        <div class="hotel-star">
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star' style='color:#ffd000'></i>
+                            <i class='bx bxs-star-half' style='color:#ffd000'></i>
+                        </div>
+                        <div class="hotel-location">
+                            <img class="location-icon" src="/img/location.png">
+                            <h3>Los Angeles</h3>
+                        </div>
+                        <div class="hotel-rating">
+                            <p class="rate-number">8.3</p>
+                            <p class="rate-text">Good</p>
+                        </div>
+                    </div>
+                    <div class="offert">
+                        <div class="hotel-price">
+                            <p class="price-text">PER NIGHT</p>
+                            <p class="price">1431</p>
+                        </div>
+                        <div class="hotel-services">
+                            <img class="service-img service-img-beach" src="/img/beach-chair.png">
+                            <img class="service-img" src="/img/breakfast.png">
+                            <img class="service-img" src="/img/wifi.png">
+                        </div>
+                        <button class="reserve-btn">Reserve</button>
+                    </div>
+                </div>
+                <!--HOTEL-->
+
+
+
+
+
+
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+    <script src="/js/index.js"></script>
+    <script src="/js/hotels.js"></script>
+
+</body>
+
+</html>
