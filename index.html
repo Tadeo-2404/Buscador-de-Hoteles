@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>MyHotel.com</title>
 </head>
@@ -21,19 +22,12 @@
                 <a class="link-nav" href="#">Sign In</a>
                 <a class="link-nav" href="#">Sign Up</a>
             </div>
-            <div class="coin-container">
-                <select class="select">
-                    <option value="MXN">MXN - Peso Mexicano</option>
-                    <option value="US">US - Dollar EE.UU</option>
-                    <option value="GBP">GBP - Libra Esterlina</option>
-                </select>
-            </div>
         </div>
     </nav>
 
     <form class="form">
         <div class="form-title-container">
-            <h2 class="form-title">Serch the best Hotels in the best Cities</h2>
+            <h2 class="form-title" id="typedtext"></h2>
         </div>
 
         <div class="selections">
@@ -56,9 +50,12 @@
                     <option value="200">200US$</option>
                     <option value="300">300US$</option>
                     <option value="500">500US$</option>
+                    <option value="700">700US$</option>
                     <option value="800">800US$</option>
                     <option value="1000">1000US$</option>
+                    <option value="1200">1200US$</option>
                     <option value="1300">1300US$</option>
+                    <option value="1400">1400US$</option>
                     <option value="1500">1500US$</option>
                     <option value="1800">1800US$</option>
                     <option value="2000">2000US$</option>
@@ -73,9 +70,12 @@
                     <option value="200">200US$</option>
                     <option value="300">300US$</option>
                     <option value="500">500US$</option>
+                    <option value="700">700US$</option>
                     <option value="800">800US$</option>
                     <option value="1000">1000US$</option>
+                    <option value="1200">1200US$</option>
                     <option value="1300">1300US$</option>
+                    <option value="1400">1400US$</option>
                     <option value="1500">1500US$</option>
                     <option value="1800">1800US$</option>
                     <option value="2000">2000US$</option>
@@ -98,7 +98,7 @@
                     <option value="Excellent">Excellent</option>
                     <option value="Very Good">Very Good</option>
                     <option value="Good">Good</option>
-                    <option value="Not quite Good">Not quite Good</option>
+                    <option value="Not Quite Good">Not Quite Good</option>
                     <option value="Bad">Bad</option>
                     <option value="Very Bad">Very Bad</option>
                 </select>
@@ -110,6 +110,8 @@
         <section class="hotels">
             <div class="result">
                 <h2 class="result-title">Results...</h2>
+                <div class="number-container"></div>
+                <p class="paragraph">No result</p>
             </div>
             <div class="hotels-container">
 
@@ -133,7 +135,7 @@
                             <h3>Paris</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">9.8</p>
+                            <p class="rate-number excellent">9.8</p>
                             <p class="rate-text">Excellent</p>
                         </div>
                     </div>
@@ -171,7 +173,7 @@
                             <h3>Paris</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">9.6</p>
+                            <p class="rate-number excellent">9.6</p>
                             <p class="rate-text">Excellent</p>
                         </div>
                     </div>
@@ -209,7 +211,7 @@
                             <h3>Paris</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">9.2</p>
+                            <p class="rate-number very-good">9.2</p>
                             <p class="rate-text">Very Good</p>
                         </div>
                     </div>
@@ -246,7 +248,7 @@
                             <h3>Paris</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">8.4</p>
+                            <p class="rate-number good">8.4</p>
                             <p class="rate-text">Good</p>
                         </div>
                     </div>
@@ -283,7 +285,7 @@
                             <h3>Paris</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">7.4</p>
+                            <p class="rate-number not-quite-good">7.4</p>
                             <p class="rate-text">Not Quite Good</p>
                         </div>
                     </div>
@@ -322,7 +324,7 @@
                             <h3>Roma</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">9.5</p>
+                            <p class="rate-number excellent">9.5</p>
                             <p class="rate-text">Excellent</p>
                         </div>
                     </div>
@@ -360,7 +362,7 @@
                             <h3>Roma</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">9.8</p>
+                            <p class="rate-number very-good">9.4</p>
                             <p class="rate-text">Very Good</p>
                         </div>
                     </div>
@@ -398,7 +400,7 @@
                             <h3>Roma</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">9.4</p>
+                            <p class="rate-number very-good">9.4</p>
                             <p class="rate-text">Very Good</p>
                         </div>
                     </div>
@@ -435,7 +437,7 @@
                             <h3>Roma</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">7.9</p>
+                            <p class="rate-number not-quite-good">7.9</p>
                             <p class="rate-text">Not Quite Good</p>
                         </div>
                     </div>
@@ -472,7 +474,7 @@
                             <h3>Roma</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">8.1</p>
+                            <p class="rate-number not-quite-good">7.8</p>
                             <p class="rate-text">Not Quite Good</p>
                         </div>
                     </div>
@@ -511,7 +513,7 @@
                             <h3>Madrid</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">9.8</p>
+                            <p class="rate-number excellent">9.8</p>
                             <p class="rate-text">Excellent</p>
                         </div>
                     </div>
@@ -549,7 +551,7 @@
                             <h3>Madrid</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">9.4</p>
+                            <p class="rate-number very-good">9.4</p>
                             <p class="rate-text">Very Good</p>
                         </div>
                     </div>
@@ -587,7 +589,7 @@
                             <h3>Madrid</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">9.4</p>
+                            <p class="rate-number very-good">9.4</p>
                             <p class="rate-text">Very Good</p>
                         </div>
                     </div>
@@ -624,7 +626,7 @@
                             <h3>Madrid</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">7.6</p>
+                            <p class="rate-number not-quite-good">7.6</p>
                             <p class="rate-text">Not Quite Good</p>
                         </div>
                     </div>
@@ -661,7 +663,7 @@
                             <h3>Madrid</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">9.2</p>
+                            <p class="rate-number good">9.2</p>
                             <p class="rate-text">Good</p>
                         </div>
                     </div>
@@ -700,7 +702,7 @@
                             <h3>London</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">9.7</p>
+                            <p class="rate-number excellent">9.7</p>
                             <p class="rate-text">Excellent</p>
                         </div>
                     </div>
@@ -738,7 +740,7 @@
                             <h3>London</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">9.6</p>
+                            <p class="rate-number very-good">9.6</p>
                             <p class="rate-text">Very Good</p>
                         </div>
                     </div>
@@ -775,7 +777,7 @@
                             <h3>London</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">6.9</p>
+                            <p class="rate-number bad">6.9</p>
                             <p class="rate-text">Bad</p>
                         </div>
                     </div>
@@ -813,7 +815,7 @@
                             <h3>London</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">9.5</p>
+                            <p class="rate-number very-good">9.5</p>
                             <p class="rate-text">Very Good</p>
                         </div>
                     </div>
@@ -851,7 +853,7 @@
                             <h3>London</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">7.9</p>
+                            <p class="rate-number not-quite-good">7.9</p>
                             <p class="rate-text">Not Quite Good</p>
                         </div>
                     </div>
@@ -890,7 +892,7 @@
                             <h3>Los Angeles</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">9.8</p>
+                            <p class="rate-number excellent">9.8</p>
                             <p class="rate-text">Excellent</p>
                         </div>
                     </div>
@@ -927,7 +929,7 @@
                             <h3>Los Angeles</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">9.8</p>
+                            <p class="rate-number very-good">9.8</p>
                             <p class="rate-text">Very Good</p>
                         </div>
                     </div>
@@ -964,7 +966,7 @@
                             <h3>Los Angeles</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">8.3</p>
+                            <p class="rate-number good">8.3</p>
                             <p class="rate-text">Good</p>
                         </div>
                     </div>
@@ -1002,7 +1004,7 @@
                             <h3>Los Angeles</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">7.6</p>
+                            <p class="rate-number not-quite-good">7.6</p>
                             <p class="rate-text">Not Quite Good</p>
                         </div>
                     </div>
@@ -1039,7 +1041,7 @@
                             <h3>Los Angeles</h3>
                         </div>
                         <div class="hotel-rating">
-                            <p class="rate-number">8.3</p>
+                            <p class="rate-number good">8.3</p>
                             <p class="rate-text">Good</p>
                         </div>
                     </div>
@@ -1066,6 +1068,49 @@
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="social-media">
+        <div class="social-media-container">
+            <div class="media">
+                <a href="https://github.com/ManuelDeAlba"><img class="media-img" src="/img/footer/silueta-del-logo-de-github-en-un-cuadrado.png"></a> 
+            </div>
+            <h3 class="social-media-title">
+                Juan Manuel
+             </h3>
+        </div>
+        <div class="social-media-container">
+            <div class="media">
+            <img class="media-img" src="/img/footer/facebook.png">
+            </div>
+            <h3 class="social-media-title">
+                Facebook
+             </h3>
+        </div>
+        <div class="social-media-container">
+            <div class="media">
+               <a href="https://github.com/Tadeo-2404"><img class="media-img" src="/img/footer/silueta-del-logo-de-github-en-un-cuadrado.png"></a> 
+            </div>
+            <h3 class="social-media-title">
+                Tadeo Alvarez
+             </h3>
+        </div> 
+        <div class="social-media-container">
+            <div class="media">
+            <img class="media-img" src="/img/footer/instagram.png">
+            </div>
+            <h3 class="social-media-title">
+                Instagram
+             </h3>
+        </div>
+    </div>
+        <div class="footer-text-container">
+            <p class="footer-text">
+                TADEO ALVAREZ & JUAN MANUEL &copy; ALL RIGHTS RESERVED
+            </p>
+        </div>
+
+    </footer>
 
 
 

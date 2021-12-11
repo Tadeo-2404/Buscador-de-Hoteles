@@ -21,12 +21,14 @@
 .logo-title {
     color: white;
     font-size: 3rem;
+    font-family: 'Rampart One', cursive;
 }
 .nav-body {
     display: flex;
     align-items: center;
 }
 .link-nav {
+    font-family: 'Rampart One', cursive;
     margin-right: 3rem;
     text-decoration: none;
     color: white;
@@ -41,8 +43,12 @@
 }
 
 .form {
-    background-color: var(--gris);
+    height: 30rem;
+    background-image: url(/img/backgroundSearch.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
@@ -72,22 +78,38 @@
 }
 /*HOTELS SECTION*/
 .hotels {
+    min-height: 20rem;
     background-image: url(/img/background.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 
 }
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .result-title {
+  margin: 1rem;
   text-align: center;
   font-size: 4rem;
 }
+.number-container-class {
+    font-size: 3rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: var(--azul);
+    color: white;
+}
+
 .hotels-container {
     margin-left: 10rem;
     padding: 2rem;
     margin-right: 10rem;
 }
 .hotel {
-    display: none;
+    display: grid;
     background-color: var(--blanco);
     column-gap: 1rem;
     grid-template-columns: 40% 30% 30%;
@@ -96,8 +118,29 @@
     margin-top: 2rem;
     border-radius: 1.5rem;
 }
-.put  {
-    display: grid;
+
+/* MODIFICADORES */
+.excellent {
+    background-color: green;
+}
+.very-good {
+    background-color: rgb(13, 172, 13);
+}
+.good {
+    background-color: rgb(10, 233, 10);
+}
+.not-quite-good {
+    background-color: rgb(255, 168, 6);
+}
+.bad {
+    background-color: rgb(211, 73, 73);
+}
+.very-bad {
+    background-color: rgb(247, 6, 6);
+}
+.quit  {
+    display: none;
+    transition: 0.6s ease-in;
 }
 /*SECTION HOTEL: IMG*/
 .hotel-img {
@@ -137,7 +180,6 @@
 }
 .rate-number {
     color: var(--blanco);
-    background-color: green;
     padding: 1rem;
     font-size: 2rem;
     border-radius: 3rem;
@@ -172,4 +214,50 @@
     padding: 1rem;
     font-size: 2rem;
     color: white;
+}
+
+/*FOOTER*/
+.footer {
+    background-color: var(--gris);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.social-media {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.social-media-title {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.media-img {
+    width: 10rem;
+    height: 10rem;
+}
+.footer-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text {
+    font-size: 2em;
+    border-bottom: solid 4px var(--azul);
+}
+
+/*SI NO HAY RESULTADO*/
+.paragraph {
+    display: none;
+    margin: 2rem;
+    margin-top: 5rem;
+    font-size: 4rem;
+    padding: 2rem;
+    text-align: center;
+    width: 40rem;
+    text-transform: uppercase;
+    background-color: var(--azulBajo);
+}
+
+.display {
+    display: block;
 }
